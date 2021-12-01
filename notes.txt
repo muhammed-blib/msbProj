@@ -1,0 +1,6 @@
+1-login and form finished
+
+2-qrcode with data input how much did he pay
+
+3-bootstrab
+4-radiobutton -if there is time

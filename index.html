@@ -1,0 +1,121 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Main Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+}
+
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">MSP</a>
+</div>
+<div class="collapse navbar-collapse" id="myNavbar">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="loginForAdmin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div>
+   
+
+    <form style="margin-left: 6px;" method="post">
+        
+        
+     
+
+        <p class="form-group" style="margin-top:5px">
+            <label >we are here to help</label>
+           </p>
+           
+        <br>
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input id="first" type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+        </div>
+        
+        <div class="form-group">
+            <label for="last">Last Name</label>
+            <input class="form-control"  type="text" id="last" name="last" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control"  type="text" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input class="form-control"   type="text" id="phone" name="phone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+            <label for="id">id</label>
+            <input class="form-control"  type="text" id="id" class="id" name="id" placeholder="id">
+        </div>
+        
+
+      
+        <input id="submit" type="submit" value="Submit" class="btn btn-primary">
+
+
+    </form>
+    
+
+
+</div> 
+
+<div style="margin: 30px;align-items: center;justify-content: center;display: flex;flex-direction: column;align-items: center;">
+    <p id="start"><strong><em>your generated qrcode use it to get all your information scan this code or just click on it</em></strong> </p>
+    <br>
+    <p  id="qrcode"></p>
+</div>
+
+
+
+
+</div>
+
+<footer class="container-fluid text-center">
+<p>Copyright &copy; 2021 MSP</p>
+
+
+</footer>
+
+
+</div>
+
+
+<script src="js/user.js"></script>
+
+
+<script src="js/qrcodelib/qrcode.js"></script>
+
+
+
+
+</body>
+</html>
