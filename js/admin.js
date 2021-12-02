@@ -43,10 +43,10 @@ document.getElementById("save").addEventListener("click", function(){
     var data = {
         "eventName": document.getElementById("area-name").value,
         "date": document.getElementById("area-date").value,
-        "eventPlace": document.getElementById("area-place").value,
-        "id": document.getElementById("area-id").value,
+        "placeEvent": document.getElementById("area-place").value,
+        
         "description": document.getElementById("area-desc").value,
-        "price": document.getElementById("area-price").value,
+        "priceEvent": document.getElementById("area-price").value,
     };
 
     if (data.eventName == "" ||   data.id == "" || data.eventPlace== "") {
@@ -58,16 +58,17 @@ document.getElementById("save").addEventListener("click", function(){
             "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
-        //if the data sent successfull alert the user
     
     }).then(function(response){
-        alert("Data saved");
+        alert("Event added");
         return response.json();
+        
        
     }).then(function(data){
         console.log(data);
     }).catch(function(error){
-        console.log(error);
+        
+        alert("error",error)
     });
 }
 });
